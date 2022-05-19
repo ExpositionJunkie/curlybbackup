@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/cblogo.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Write your magnum opus or 'Hello World'"
+    />
+
+    <!-- Bing -->
+    <meta name="msvalidate.01" content="EC9D67B419B146DBD571FB246C722DA3" />
+
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo.svg" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+    <title>Curly Brackets</title>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script>
+      //defines dataLayer and the gtag function
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      window.gtag = gtag;
+      //defaults analytics and ad storage to default
+      gtag("consent", "default", {
+        ad_storage: "denied",
+        analytics_storage: "denied",
+      });
+    </script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-RWVLYS3GQ3"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      window.gtag = gtag;
+      gtag("js", new Date());
+      gtag("config", "G-RWVLYS3GQ3", {
+        anonymize_ip: true,
+        cookie_flags: "max-age=7200;secure;samesite=strict",
+      });
+    </script>
+    <script>
+      function consentGranted() {
+        gtag("consent", "update", {
+          ad_storage: "granted",
+          analytics_storage: "granted",
+        });
+      }
+    </script>
+    <script>
+      function consentRevoked() {
+        gtag("consent", "update", {
+          ad_storage: "denied",
+          analytics_storage: "denied",
+        });
+      }
+    </script>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+  </body>
+</html>

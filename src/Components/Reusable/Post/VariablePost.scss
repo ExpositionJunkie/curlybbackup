@@ -1,0 +1,15 @@
+@import "../../../Variables/Sass/SassVariables.scss";
+
+.unverified-post{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+}
+
+.tagline {
+    color: inherit;
+    font-family: $subtitleFont;
+    font-size: 1rem;
+}
+

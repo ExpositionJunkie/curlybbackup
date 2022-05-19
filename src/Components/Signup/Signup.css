@@ -1,0 +1,118 @@
+.signup-wrapper {
+  color: #ffffff;
+  background-color: #000000;
+  min-height: 100vh;
+}
+
+.signup-form-inner-wrapper {
+  justify-content: center;
+}
+
+@media screen and (max-width: 500px) {
+  .signup-form-inner-wrapper {
+    display: flex;
+    font-family: "Raleway", sans-serif;
+    margin: 1rem;
+  }
+
+  .signup-form {
+    display: flex;
+    flex-direction: column;
+    font-family: "Raleway", sans-serif;
+    text-align: center;
+    align-items: center;
+    margin: 1rem;
+  }
+
+  .signup-tagline {
+    font-size: 1rem;
+  }
+
+  .signup-form label {
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    margin: 1rem;
+    font-size: 2rem;
+    align-self: center;
+    border-radius: 20px;
+  }
+
+  .signup-form input {
+    width: 100%;
+    font-size: 2rem;
+    align-self: center;
+    border-radius: 20px;
+    text-align: center;
+    padding: 0.5rem;
+  }
+
+  .signup-submit {
+    margin-top: 3rem;
+    border-radius: 15px;
+    font-family: "Raleway", sans-serif;
+    font-size: 1.5rem;
+    background-color: #e94584;
+    color: #ffffff;
+    cursor: pointer;
+  }
+
+  .inner-form {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 500px) {
+  .signup-form-inner-wrapper {
+    display: flex;
+    font-family: "Raleway", sans-serif;
+    margin: 1rem;
+  }
+
+  .signup-form {
+    display: flex;
+    flex-direction: column;
+    font-family: "Raleway", sans-serif;
+    text-align: center;
+    align-items: center;
+    margin: 1rem;
+  }
+
+  .signup-tagline {
+    font-size: 1.5rem;
+  }
+
+  .signup-form label {
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    margin: 1rem;
+    font-size: 2rem;
+    align-self: center;
+    border-radius: 20px;
+  }
+
+  .signup-form input {
+    width: 100%;
+    font-size: 2rem;
+    align-self: center;
+    border-radius: 20px;
+    text-align: center;
+    padding: 0.5rem;
+  }
+
+  .signup-submit {
+    margin-top: 3rem;
+    border-radius: 15px;
+    font-family: "Raleway", sans-serif;
+    font-size: 1.5rem;
+    background-color: #e94584;
+    color: #ffffff;
+    cursor: pointer;
+  }
+
+  .inner-form {
+    display: flex;
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,116 @@
+@import "../../Variables/Sass/SassVariables.scss";
+
+.signup-wrapper {
+  color: $whiteColor;
+  background-color: $blackColor;
+  min-height: 100vh;
+}
+
+.signup-form-inner-wrapper {
+  justify-content: center;
+}
+
+
+@media screen and (max-width: 500px) {
+  .signup-form-inner-wrapper {
+    display: flex;
+    font-family: $bodyFont;
+    margin: 1rem;
+  }
+
+  .signup-form {
+    display: flex;
+    flex-direction: column;
+    font-family: $bodyFont;
+    text-align: center;
+    align-items: center;
+    margin: 1rem;
+  }
+  .signup-tagline {
+    font-size: 1rem;
+  }
+  
+  .signup-form label {
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    margin: 1rem;
+    @include textInputStyle(2rem);
+  }
+  
+  .signup-form input {
+    width: 100%;
+    @include textInputStyle(2rem);
+    text-align: center;
+    padding: 0.5rem;
+  }
+  
+  .signup-submit {
+    margin-top: 3rem;
+    border-radius: 15px;
+    font-family: $bodyFont;
+    font-size: 1.5rem;
+    background-color: $pinkColor;
+    color: $whiteColor;
+    cursor: pointer;
+  }
+  
+  .inner-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+}
+
+@media screen and (min-width: 500px) {
+  .signup-form-inner-wrapper {
+    display: flex;
+    font-family: $bodyFont;
+    margin: 1rem;
+  }
+
+  .signup-form {
+    display: flex;
+    flex-direction: column;
+    font-family: $bodyFont;
+    text-align: center;
+    align-items: center;
+    margin: 1rem;
+  }
+
+  .signup-tagline {
+    font-size: 1.5rem;
+  }
+  
+  .signup-form label {
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    margin: 1rem;
+    @include textInputStyle(2rem);
+  }
+  
+  .signup-form input {
+    width: 100%;
+    @include textInputStyle(2rem);
+    text-align: center;
+    padding: 0.5rem;
+  }
+  
+  .signup-submit {
+    margin-top: 3rem;
+    border-radius: 15px;
+    font-family: $bodyFont;
+    font-size: 1.5rem;
+    background-color: $pinkColor;
+    color: $whiteColor;
+    cursor: pointer;
+  }
+  
+  .inner-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  
+}

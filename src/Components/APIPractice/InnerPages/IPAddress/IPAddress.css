@@ -1,0 +1,61 @@
+.ip-wrapper {
+  color: #ffffff;
+}
+
+.ip-inner-wrapper h2 {
+  font-family: "Advent Pro", sans-serif;
+  font-size: 2rem;
+}
+
+.ip-inner-wrapper h3 {
+  font-family: "Comfortaa", cursive;
+}
+
+.ip-inner-wrapper p {
+  font-family: "Raleway", sans-serif;
+  font-size: 2rem;
+}
+
+.ip-inner-wrapper input {
+  font-family: "Raleway", sans-serif;
+  width: 100%;
+  font-size: 2rem;
+  align-self: center;
+  border-radius: 20px;
+}
+
+.ip-inner-wrapper select {
+  font-family: "Raleway", sans-serif;
+  width: 100%;
+  font-size: 2rem;
+  align-self: center;
+  border-radius: 20px;
+}
+
+.ip-inner-wrapper label {
+  font-family: "Raleway", sans-serif;
+  font-size: 2rem;
+}
+
+.ip-inner-wrapper form > * {
+  margin: 2rem;
+}
+
+#ip-submit {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 100%;
+  color: #ffffff;
+  font-family: "Raleway", sans-serif;
+  font-size: 2rem;
+  align-self: center;
+  background-color: #e94584;
+  border-radius: 20px;
+}
+
+.ip-result {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: 100%;
+  text-align: center;
+}

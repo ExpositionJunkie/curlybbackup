@@ -1,0 +1,52 @@
+.name-guess-wrapper {
+  color: #ffffff;
+}
+
+.name-guess-inner-wrapper h2 {
+  font-family: "Advent Pro", sans-serif;
+  font-size: 2rem;
+}
+
+.name-guess-inner-wrapper p {
+  font-family: "Raleway", sans-serif;
+  font-size: 2rem;
+}
+
+.name-guess-inner-wrapper input {
+  font-family: "Raleway", sans-serif;
+  width: 100%;
+  font-size: 2rem;
+  align-self: center;
+  border-radius: 20px;
+}
+
+.name-guess-inner-wrapper select {
+  font-family: "Raleway", sans-serif;
+  width: 100%;
+  font-size: 2rem;
+  align-self: center;
+  border-radius: 20px;
+}
+
+.name-guess-inner-wrapper label {
+  font-family: "Raleway", sans-serif;
+  font-size: 2rem;
+}
+
+#name-guess-submit {
+  width: 97%;
+  display: grid;
+  grid-template-columns: 100%;
+  font-size: 2rem;
+  align-self: center;
+  background-color: #e94584;
+  border-radius: 20px;
+}
+
+.name-guess-response {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding: 2rem;
+}

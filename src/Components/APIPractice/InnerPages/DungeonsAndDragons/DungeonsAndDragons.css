@@ -1,0 +1,114 @@
+.dnd-wrapper {
+  color: #ffffff;
+  width: 100vw;
+}
+
+.dnd-explanation {
+  font-family: "Raleway", sans-serif;
+}
+
+.dnd-wrapper p {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.25rem;
+}
+
+.inner-wrapper h1 {
+  font-family: "Staatliches", cursive;
+  font-size: 4rem;
+  color: #e94584;
+}
+
+.dnd-wrapper h2 {
+  font-family: "Advent Pro", sans-serif;
+  font-size: 3rem;
+}
+
+.dnd-wrapper h3 {
+  font-family: "Comfortaa", cursive;
+  font-size: 2rem;
+}
+
+@media screen and (min-width: 100px) {
+  .text-input {
+    font-family: "Raleway", sans-serif;
+    font-size: 2rem;
+    width: 100%;
+    font-size: 2rem;
+    align-self: center;
+    border-radius: 20px;
+  }
+
+  .dnd-search-form {
+    font-family: "Raleway", sans-serif;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .dnd-search-form > * {
+    text-align: center;
+    align-self: center;
+    width: 100%;
+  }
+
+  .dnd-search-label {
+    font-size: 1.5rem;
+  }
+
+  .button-dnd {
+    font-family: "Raleway", sans-serif;
+    color: #ffffff;
+    font-size: 1.5rem;
+    align-self: center;
+    background-color: #e94584;
+    border-radius: 20px;
+  }
+}
+@media screen and (min-width: 600px) {
+  .text-input {
+    font-family: "Raleway", sans-serif;
+    font-size: 2rem;
+    width: 100%;
+    font-size: 2rem;
+    align-self: center;
+    border-radius: 20px;
+  }
+
+  .dnd-search-form {
+    display: flex;
+  }
+
+  .button-dnd {
+    font-family: "Raleway", sans-serif;
+    color: #ffffff;
+    font-size: 2rem;
+    align-self: center;
+    background-color: #e94584;
+    border-radius: 20px;
+  }
+}
+@media screen and (min-width: 700px) {
+  .dnd-search-form {
+    display: flex;
+  }
+
+  .dnd-search-form > * {
+    font-family: "Raleway", sans-serif;
+  }
+
+  .dnd-search-label {
+    color: #e94584;
+  }
+
+  .text-input .button-dnd .dnd-search-label {
+    padding: 2rem;
+    margin: 2rem;
+  }
+
+  .button-dnd {
+    color: #ffffff;
+    font-size: 2rem;
+    align-self: center;
+    background-color: #e94584;
+    border-radius: 20px;
+  }
+}

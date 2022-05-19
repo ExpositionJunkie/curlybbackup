@@ -1,0 +1,56 @@
+@import "../../../../Variables/Sass/SassVariables.scss";
+
+.ip-wrapper {
+  color: $whiteColor;
+}
+
+.ip-inner-wrapper h2 {
+  font-family: $subtitleFont;
+  font-size: 2rem;
+}
+
+.ip-inner-wrapper h3 {
+  font-family: $bodyFont2;
+}
+
+.ip-inner-wrapper p {
+  font-family: $bodyFont;
+  font-size: 2rem;
+}
+
+.ip-inner-wrapper input {
+  font-family: $bodyFont;
+  width: 100%;
+  @include textInputStyle(2rem);
+}
+
+.ip-inner-wrapper select {
+  font-family: $bodyFont;
+  width: 100%;
+  @include textInputStyle(2rem);
+}
+
+.ip-inner-wrapper label {
+  font-family: $bodyFont;
+  font-size: 2rem;
+}
+
+.ip-inner-wrapper form >* {
+  margin: 2rem;
+}
+
+#ip-submit {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    color: $whiteColor;
+    font-family: $bodyFont;
+  @include buttonStyle($pinkColor, 2rem);
+}
+
+.ip-result {
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: 100%;
+    text-align: center;
+}

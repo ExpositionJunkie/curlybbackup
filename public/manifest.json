@@ -1,0 +1,9 @@
+{
+  "short_name": "Curly Brackets",
+  "name": "Curly Brackets",
+  "icons": ["%PUBLIC_URL%/cblogo.ico"],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#000000"
+}

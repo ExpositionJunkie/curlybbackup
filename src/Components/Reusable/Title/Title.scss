@@ -1,0 +1,35 @@
+@import "../../../Variables/Sass/SassVariables.scss";
+
+.page_title {
+  @include rainbow(100%, 100%);
+}
+
+.page_title h1 {
+  width: auto;
+  height: auto;
+  margin: 0;
+  color: $whiteColor;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-family: "Staatliches";
+  font-size: 5rem;
+  text-align: center;
+}
+
+.title_wrapper {
+  margin: 0;
+  padding: 0;
+}
+
+@media only screen and (max-width: 500px) {
+  .page_title h1 {
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-family: "Staatliches";
+    font-size: 3rem;
+    text-align: center;
+  }
+}

@@ -1,0 +1,12 @@
+.unverified-post {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+}
+
+.tagline {
+  color: inherit;
+  font-family: "Advent Pro", sans-serif;
+  font-size: 1rem;
+}

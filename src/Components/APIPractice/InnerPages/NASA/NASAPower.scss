@@ -1,0 +1,53 @@
+@import "../../../../Variables/Sass/SassVariables.scss";
+
+.nasa-wrapper {
+  color: $whiteColor;
+}
+
+.nasa-inner-wrapper h2 {
+  font-family: $subtitleFont;
+  font-size: 2rem;
+}
+
+.nasa-inner-wrapper h3 {
+  font-family: $bodyFont2;
+}
+
+.nasa-inner-wrapper p {
+  font-family: $bodyFont;
+  font-size: 2rem;
+}
+
+.nasa-inner-wrapper input {
+  font-family: $bodyFont;
+  width: 100%;
+  @include textInputStyle(2rem);
+}
+
+.nasa-inner-wrapper select {
+  font-family: $bodyFont;
+  width: 100%;
+  @include textInputStyle(2rem);
+}
+
+.nasa-inner-wrapper label {
+  font-family: $bodyFont;
+  font-size: 2rem;
+}
+
+.nasa-inner-wrapper form >* {
+  margin: 2rem;
+}
+
+#nasa-submit {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+  @include buttonStyle($pinkColor, 2rem);
+}
+
+.nasa-response {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    padding: 2rem;
+}

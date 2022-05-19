@@ -1,0 +1,56 @@
+.comment-entry-body img {
+  max-width: 90%;
+  height: auto;
+  padding: 1rem;
+  border-radius: 40px;
+}
+
+@media screen and (max-width: 500px) {
+  .comment-author-details {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  .comment-author {
+    font-size: 1rem;
+    margin-right: 2rem;
+    font-family: "Raleway", sans-serif;
+  }
+}
+@media screen and (min-width: 500px) {
+  .comment-author-details {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  .comment-author {
+    font-size: 1rem;
+    margin-right: 2rem;
+    font-family: "Raleway", sans-serif;
+  }
+}
+@media screen and (min-width: 900px) {
+  .comment-body-wrap {
+    margin: 3rem;
+  }
+
+  .comment-author-details {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  .comment-author {
+    font-size: 1rem;
+    margin-right: 2rem;
+    font-family: "Raleway", sans-serif;
+  }
+}

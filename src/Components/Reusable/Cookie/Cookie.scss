@@ -1,0 +1,300 @@
+@import "../../../Variables/Sass/SassVariables.scss";
+
+.cookie-wrap {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: none;
+}
+.disappear {
+  z-index: -1;
+  opacity: 0;
+}
+
+.cookie-wrap a {
+  text-decoration: none;
+  color: $pinkColor;
+}
+
+.cookie-wrap a:hover {
+  text-decoration: none;
+  color: $yellowColor;
+}
+
+.cookie-wrap a:visited {
+  text-decoration: none;
+  color: $purpleColor;
+}
+
+
+@media screen and (max-width: 500px) {
+  .inner-cookie-wrap {
+    position: fixed;
+    top: 10vh;
+    background-color: none;
+    width: 100vw;
+    z-index: 1;
+  }
+
+  .cookie-dialog {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: $blackColor;
+    color: $whiteColor;
+    border-radius: 20px;
+    border-color: $blackColor;
+    width: 80vw;
+    position: sticky;
+    @include rainbow-shadow(0px, 0px, 15px);
+  }
+
+  .cookie-dialog :nth-child(2) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cookie-text {
+    font-size: 0.75rem;
+    font-family: $bodyFont;
+    text-align: center;
+    align-content: center;
+  }
+
+  .button-wrap{
+    margin-left: 3rem;
+    margin-right: 3rem;
+    display: grid !important;
+    grid-template-rows: 50% 50%;
+  }
+
+  .accept-button,
+  .decline-button {
+    font-family: $bodyFont;
+    font-size: 1rem;
+    border-radius: 20px;
+    padding: 0.5rem;
+    color: $whiteColor; 
+    justify-content: center;
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+    padding: 0.5rem;
+  }
+
+  .decline-button {
+    background-color: $blackColor;
+    align-items: stretch;
+  }
+
+ .accept-button {
+    background-color: $blackColor;
+    align-items: stretch;
+  }
+
+  .accept-button ::after, .decline-button ::after {
+    @include rainbow-shadow(0px, 0px, 15px);
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .inner-cookie-wrap {
+    position: fixed;
+    top: 40vh;
+    background-color: none;
+    width: 100vw;
+  }
+
+  .cookie-dialog {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: $blackColor;
+    color: $whiteColor;
+    border-radius: 20px;
+    border-color: $blackColor;
+    width: 80vw;
+    position: sticky;
+    @include rainbow-shadow(0px, 0px, 15px);
+  }
+
+  .cookie-dialog :nth-child(2) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cookie-text {
+    font-size: 1.5rem;
+    font-family: $bodyFont;
+    text-align: center;
+    align-content: center;
+  }
+
+  .button-wrap{
+    margin-left: 3rem;
+    margin-right: 3rem;
+    align-content: stretch;
+  }
+
+  .accept-button,
+  .decline-button {
+    font-family: $bodyFont;
+    font-size: 1.5rem;
+    border-radius: 20px;
+    padding: 0.5rem;
+    color: $whiteColor; 
+    justify-content: center;
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+    
+  }
+
+  .decline-button {
+    background-color: $blackColor;
+    padding: 2rem;
+  }
+
+ .accept-button {
+    background-color: $blackColor;
+    padding: 2rem;
+    align-items: stretch;
+  }
+
+  .accept-button ::after, .decline-button ::after {
+    @include rainbow-shadow(0px, 0px, 15px);
+  }
+}
+
+@media screen and (min-width: 800px) {
+    .inner-cookie-wrap {
+      position: fixed;
+      top: 50vh;
+      background-color: none;
+      width: 100vw;
+    }
+  
+    .cookie-dialog {
+      display: flex;
+      flex-direction: column;
+      margin-left: auto;
+      margin-right: auto;
+      background-color: $blackColor;
+      color: $whiteColor;
+      border-radius: 20px;
+      border-color: $blackColor;
+      width: 80vw;
+      position: sticky;
+      @include rainbow-shadow(0px, 0px, 15px);
+    }
+  
+  
+    .cookie-text {
+      font-size: 1.5rem;
+      font-family: $bodyFont;
+      text-align: center;
+    }
+  
+    .button-wrap{
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    .accept-button,
+    .decline-button {
+      font-family: $bodyFont;
+      font-size: 1.5rem;
+      border-radius: 20px;
+      color: $whiteColor; 
+      padding: 1rem;
+    }
+  
+    .decline-button {
+      background-color: $blackColor;
+      margin-right: 0;
+    }
+  
+   .accept-button {
+      background-color: $blackColor;
+      margin-left: 0;
+      align-items: stretch;
+    }
+  
+    .accept-button ::after, .decline-button ::after {
+      @include rainbow-shadow(0px, 0px, 15px);
+    }
+  
+}
+
+@media screen and (min-width: 1200px) {
+  .inner-cookie-wrap {
+    position: fixed;
+    top: 70vh;
+    background-color: none;
+    width: 100vw;
+  }
+
+  .cookie-dialog {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: $blackColor;
+    color: $whiteColor;
+    border-radius: 20px;
+    border-color: $blackColor;
+    width: 80vw;
+    position: sticky;
+    @include rainbow-shadow(0px, 0px, 15px);
+  }
+
+  .cookie-dialog :nth-child(2) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cookie-text {
+    font-size: 1.5rem;
+    font-family: $bodyFont;
+    text-align: center;
+    align-content: center;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .button-wrap{
+    margin-left: 3rem;
+    margin-right: 3rem;
+    display: grid !important;
+    grid-template-columns: 50% 50%;
+  }
+
+  .accept-button,
+  .decline-button {
+    font-family: $bodyFont;
+    font-size: 1.5rem;
+    border-radius: 20px;
+    padding: 0.5rem;
+    color: $whiteColor; 
+    justify-content: center;
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .decline-button {
+    background-color: $blackColor;
+    margin-right: 1rem;
+  }
+
+ .accept-button {
+    background-color: $blackColor;
+    display: flex;
+    align-items: stretch;
+    margin-left: 1rem;
+  }
+
+  .accept-button ::after, .decline-button ::after {
+    @include rainbow-shadow(0px, 0px, 15px);
+  }
+}

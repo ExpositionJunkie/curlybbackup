@@ -1,0 +1,227 @@
+@media screen and (max-width: 500px) {
+  .tags-header {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .tags-header > * {
+    margin: 0px;
+  }
+
+  .tags-summary {
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    overflow-y: scroll;
+    border-radius: 15px;
+    background: rgb(240, 9, 122);
+    background: linear-gradient(0deg, rgba(240, 9, 122, 0.2) 5%, rgba(0, 0, 0, 0.0490654206) 88%);
+  }
+
+  .tag-summary-span {
+    overflow-y: scroll;
+    text-transform: uppercase;
+    font-family: "Cairo", sans-serif;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+
+  .tag-bubble {
+    padding: 1rem;
+    color: #ffffff;
+    background-color: black;
+    margin-left: 0.25rem;
+    text-decoration: none;
+  }
+}
+@media screen and (min-width: 501px) and (max-width: 749px) {
+  .tags-header {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .tags-header > * {
+    margin: 0px;
+  }
+
+  .tags-summary {
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    overflow-y: scroll;
+    border-radius: 15px;
+    background: rgb(240, 9, 122);
+    background: linear-gradient(0deg, rgba(240, 9, 122, 0.2) 5%, rgba(0, 0, 0, 0.0490654206) 88%);
+  }
+
+  .tag-summary-span {
+    overflow-y: scroll;
+    text-transform: uppercase;
+    font-family: "Cairo", sans-serif;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+
+  .tag-bubble {
+    padding: 1rem;
+    color: #ffffff;
+    background-color: black;
+    margin-left: 0.5rem;
+    text-decoration: none;
+  }
+}
+@media screen and (min-width: 750px) {
+  .tags-header {
+    font-family: "Advent Pro", sans-serif;
+    font-size: 1rem;
+  }
+
+  .summary-border {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    max-height: 90%;
+    overflow: hidden;
+    background: linear-gradient(45deg, #f17c58, #e94584, #24aadb, #27dbb1, #ffdc18, #ff3706);
+    background-size: 600% 100%;
+    -webkit-animation: gradient 16s linear infinite;
+            animation: gradient 16s linear infinite;
+    -webkit-animation-direction: alternate;
+            animation-direction: alternate;
+    overflow-x: hidden;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 2rem;
+    margin-right: 1rem;
+    padding-right: 1px;
+    height: 100%;
+  }
+  @-webkit-keyframes gradient {
+    0% {
+      background-position: 0%;
+    }
+    100% {
+      background-position: 100%;
+    }
+  }
+  @keyframes gradient {
+    0% {
+      background-position: 0%;
+    }
+    100% {
+      background-position: 100%;
+    }
+  }
+
+  .tags-summary {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    margin-right: 3rem;
+    height: 100%;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: flex-start;
+  }
+
+  .tag-summary-span {
+    text-transform: uppercase;
+    font-family: "Cairo", sans-serif;
+  }
+
+  .tag-bubble {
+    padding: 1rem;
+    color: #ffffff;
+    background-color: black;
+    margin: 0.5rem;
+    text-decoration: none;
+  }
+}
+@media screen and (min-width: 950px) {
+  .tags-header {
+    font-family: "Advent Pro", sans-serif;
+    font-size: 1rem;
+  }
+
+  .summary-border {
+    height: 100%;
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    max-height: 90%;
+    overflow: hidden;
+    background: linear-gradient(45deg, #f17c58, #e94584, #24aadb, #27dbb1, #ffdc18, #ff3706);
+    background-size: 600% 100%;
+    -webkit-animation: gradient 16s linear infinite;
+            animation: gradient 16s linear infinite;
+    -webkit-animation-direction: alternate;
+            animation-direction: alternate;
+    overflow-x: hidden;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    margin-left: 0.5px;
+    margin-right: 1.5rem;
+    padding-right: 1px;
+  }
+  @-webkit-keyframes gradient {
+    0% {
+      background-position: 0%;
+    }
+    100% {
+      background-position: 100%;
+    }
+  }
+  @keyframes gradient {
+    0% {
+      background-position: 0%;
+    }
+    100% {
+      background-position: 100%;
+    }
+  }
+
+  .tags-summary {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    height: 100%;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: flex-start;
+  }
+
+  .tag-summary-span {
+    text-transform: uppercase;
+    font-family: "Cairo", sans-serif;
+  }
+
+  .tag-bubble {
+    padding: 1rem;
+    color: #ffffff;
+    background-color: black;
+    margin: 0.5rem;
+    text-decoration: none;
+  }
+}

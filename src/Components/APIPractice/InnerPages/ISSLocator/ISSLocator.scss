@@ -1,0 +1,55 @@
+@import "../../../../Variables/Sass/SassVariables.scss";
+
+.iss-wrapper {
+  color: $whiteColor;
+}
+
+.iss-inner-wrapper h2 {
+  font-family: $subtitleFont;
+  font-size: 2rem;
+}
+
+.iss-inner-wrapper h3 {
+  font-family: $bodyFont2;
+}
+
+.iss-inner-wrapper p {
+  font-family: $bodyFont;
+  font-size: 2rem;
+}
+
+.iss-inner-wrapper input {
+  font-family: $bodyFont;
+  width: 100%;
+  @include textInputStyle(2rem);
+}
+
+.iss-inner-wrapper select {
+  font-family: $bodyFont;
+  width: 100%;
+  @include textInputStyle(2rem);
+}
+
+.iss-inner-wrapper label {
+  font-family: $bodyFont;
+  font-size: 2rem;
+}
+
+.iss-inner-wrapper form >* {
+  margin: 2rem;
+}
+
+#iss-submit {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    color: $whiteColor;
+    font-family: $bodyFont;
+  @include buttonStyle($pinkColor, 2rem);
+}
+
+.iss-response {
+    display: grid;
+    grid-template-columns: 100%;
+    text-align: center;
+}

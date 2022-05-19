@@ -1,0 +1,644 @@
+@import "../../Variables/Sass/SassVariables.scss";
+
+.about-wrapper {
+  color: $whiteColor;
+}
+
+.about-wrapper a {
+  text-decoration: none;
+  color: $pinkColor;
+}
+
+.about-wrapper a:hover {
+  text-decoration: none;
+  color: $yellowColor;
+}
+
+.about-wrapper a:visited {
+  text-decoration: none;
+  color: $purpleColor;
+}
+
+
+.about-body {
+  font-family: $bodyFont;
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 500px) {
+  .inner-about-wrapper {
+    padding: 0.5rem;
+  }
+
+  .about-body {
+    font-size: 1.5rem;
+  }
+
+  .about-img-div {
+    display: grid;
+    grid-template-rows: 30% 30% 30%;
+    justify-content: space-around;
+  }
+
+  .about-img-div :nth-child(2) {
+    margin-top: 5rem;
+    margin-bottom: 6rem;
+  }
+
+  .about-img-div > * {
+    border-radius: 10px;
+    height: auto;
+    width: 40vw;
+    border-width: 1rem;
+    margin-top: 2rem;
+  }
+
+  #hiRoz {
+    font-family: $titleFont;
+    font-size: 4rem;
+    text-align: center;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin: 0;
+  }
+
+  #drop {
+    font-size: 2rem;
+    font-family: $titleFont;
+  }
+
+  .subtitle {
+    font-family: $bodyFont;
+    font-size: 2rem;
+  }
+
+  #netrunner,
+  #apollo {
+    height: 20rem;
+    width: auto;
+    border-radius: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #apollo {
+    margin-bottom: 2rem;
+  }
+
+  .introSpan > * {
+    text-align: center;
+  }
+
+  .hobbies {
+    font-family: $subtitleFont;
+    font-size: 1.5rem;
+    font-weight: 100;
+    text-align: left;
+  }
+
+  // Stack List Card
+  .stackWrap {
+    display: flex;
+    padding: 1rem;
+  }
+
+  .stack {
+    font-size: 3rem;
+    padding-right: 1rem;
+    font-family: $titleFont;
+    text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
+      -0.025em -0.05em 0 rgba(0, 255, 0, 0.75),
+      0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+
+    animation: glitch 552ms infinite;
+  }
+
+  .stack span {
+    position: absolute;
+    z-index: -1;
+  }
+
+  .stack span:first-child {
+    animation: glitch 731ms infinite;
+  }
+
+  .stack span:last-child {
+    animation: glitch 373s infinite;
+  }
+  .stackList {
+    align-content: space-between;
+    font-size: 1.5rem;
+    padding-right: 1rem;
+    font-family: $subtitleFont;
+  }
+
+  .sl:hover {
+    text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
+      -0.025em -0.05em 0 rgba(0, 255, 0, 0.75),
+      0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+
+    animation: glitch 450ms infinite;
+  }
+
+  //Goals Card
+  .goals h1 {
+    font-family: $titleFont;
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .goals h3 {
+    font-family: $subtitleFont;
+    font-size: 2rem;
+  }
+
+  .goals ul {
+    list-style-type: square;
+    font-family: $bodyFont;
+  }
+  .goals p {
+    font-family: $subtitleFont;
+    font-size: 1.5rem;
+  }
+
+  .headline {
+    font-family: $subtitleFont;
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .inner-about-wrapper {
+    padding: 2rem;
+  }
+  
+  .about-body h2 {
+    font-size: 1.5rem;
+  }
+  .about-img-div {
+    display: grid;
+    grid-template-rows: 30% 30% 30%;
+    justify-content: space-around;
+  }
+
+  .about-img-div :nth-child(2) {
+    margin-top: 5rem;
+    margin-bottom: 6rem;
+  }
+
+  .about-img-div > * {
+    border-radius: 10px;
+    height: auto;
+    width: 40vw;
+    border-width: 1rem;
+    margin-top: 2rem;
+  }
+  #hiRoz {
+    font-family: $titleFont;
+    font-size: 5rem;
+    text-align: center;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin: 0;
+  }
+
+  #drop {
+    font-size: 3rem;
+    font-family: $titleFont;
+  }
+
+  .subtitle {
+    font-family: $bodyFont;
+    font-size: 2.5rem;
+  }
+
+  #netrunner,
+  #apollo {
+    height: 30rem;
+    width: auto;
+    border-radius: 20px;
+  }
+
+  .introSpan {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin: 0;
+  }
+
+  #topIntro {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-column: auto;
+  }
+
+  #hobbiesIntro {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-column: auto;
+  }
+
+  .introSpan > * {
+    padding: 1rem;
+  }
+
+  .hobbies {
+    font-family: $subtitleFont;
+    font-size: 2rem;
+    font-weight: 100;
+  }
+
+  // Stack List Card
+  .stackWrap {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-column: auto;
+  }
+
+  .stack {
+    font-size: 8vw;
+    padding-left: 1em;
+    font-family: $titleFont;
+    text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
+      -0.025em -0.05em 0 rgba(0, 255, 0, 0.75),
+      0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+
+    animation: glitch 552ms infinite;
+  }
+
+  .stack span {
+    position: absolute;
+    z-index: -1;
+  }
+
+  .stack span:first-child {
+    animation: glitch 731ms infinite;
+  }
+
+  .stack span:last-child {
+    animation: glitch 373s infinite;
+  }
+  .stackList {
+    align-content: space-between;
+    font-size: 3.5vw;
+    padding-right: 1em;
+    font-family: $subtitleFont;
+  }
+
+  .sl:hover {
+    text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
+      -0.025em -0.05em 0 rgba(0, 255, 0, 0.75),
+      0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+
+    animation: glitch 450ms infinite;
+  }
+
+  //Goals Card
+
+  .goals h1 {
+    font-family: $titleFont;
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .goals h3 {
+    font-family: $subtitleFont;
+    font-size: 2rem;
+  }
+
+  .goals ul {
+    list-style-type: square;
+    font-family: $bodyFont;
+  }
+  .goals p {
+    font-family: $subtitleFont;
+    font-size: 1.5rem;
+  }
+
+}
+
+@media screen and (min-width: 800px) {
+  .about-img-div {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    justify-content: space-around;
+  }
+
+  .about-img-div :nth-child(2) {
+    justify-self: center;
+    align-self: center;
+    margin: auto;
+  }
+
+  .about-img-div > * {
+    border-radius: 10px;
+    height: 30vh;
+    width: auto;
+    margin: 1rem;
+    border-width: 1rem;
+    margin: 1rem;
+  }
+  #hiRoz {
+    font-family: $titleFont;
+    font-size: 5rem;
+    text-align: center;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin: 0;
+  }
+
+  #drop {
+    font-size: 3rem;
+    font-family: $titleFont;
+  }
+
+  .subtitle {
+    font-family: $bodyFont;
+    font-size: 2.5rem;
+  }
+
+  #netrunner,
+  #apollo {
+    height: 30rem;
+    width: auto;
+    border-radius: 20px;
+  }
+
+  #topIntro {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-column: auto;
+  }
+
+  #hobbiesIntro {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-column: auto;
+  }
+
+  .introSpan > * {
+    padding: 1rem;
+  }
+
+  .hobbies {
+    font-family: $subtitleFont;
+    font-size: 2rem;
+    font-weight: 100;
+  }
+
+  // Stack List Card
+  .stackWrap {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-column: auto;
+  }
+
+  .stack {
+    font-size: 8vw;
+    padding-left: 1em;
+    font-family: $titleFont;
+    text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
+      -0.025em -0.05em 0 rgba(0, 255, 0, 0.75),
+      0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+
+    animation: glitch 552ms infinite;
+  }
+
+  .stack span {
+    position: absolute;
+    z-index: -1;
+  }
+
+  .stack span:first-child {
+    animation: glitch 731ms infinite;
+  }
+
+  .stack span:last-child {
+    animation: glitch 373s infinite;
+  }
+  .stackList {
+    align-content: space-between;
+    font-size: 3.5vw;
+    padding-right: 1em;
+    font-family: $subtitleFont;
+  }
+
+  .sl:hover {
+    text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
+      -0.025em -0.05em 0 rgba(0, 255, 0, 0.75),
+      0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+
+    animation: glitch 450ms infinite;
+  }
+
+  //Goals Card
+
+  .goals h1 {
+    font-family: $titleFont;
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .goals h3 {
+    font-family: $subtitleFont;
+    font-size: 2rem;
+  }
+
+  .goals ul {
+    list-style-type: square;
+    font-family: $bodyFont;
+  }
+  .goals p {
+    font-family: $subtitleFont;
+    font-size: 1.5rem;
+  }
+}
+
+
+@media screen and (min-width: 1200px) {
+  .intro {
+    padding: 2rem;
+    display: block;
+    margin: auto;
+  }
+  #hiRoz {
+    font-family: $titleFont;
+    font-size: 6rem;
+    text-align: center;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin: 0;
+  }
+
+  #drop {
+    font-size: 6rem;
+    font-family: $titleFont;
+  }
+
+  .subtitle {
+    font-family: $bodyFont;
+    font-size: 3rem;
+  }
+
+  #netrunner,
+  #apollo {
+    height: 40rem;
+    width: auto;
+    border-radius: 20px;
+  }
+
+  .introSpan {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin: 0;
+  }
+
+  #topIntro,
+  #hobbiesIntro {
+    display: flex;
+  }
+
+  .introSpan > * {
+    margin: 3rem;
+  }
+
+  .hobbies {
+    font-family: $subtitleFont;
+    font-size: 3rem;
+    font-weight: 100;
+  }
+
+  // Stack List Card
+  .stackWrap {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-column: auto;
+  }
+
+  .stack {
+    font-size: 8vw;
+    font-family: $titleFont;
+    text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
+      -0.025em -0.05em 0 rgba(0, 255, 0, 0.75),
+      0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+
+    animation: glitch 552ms infinite;
+  }
+
+  .stack span {
+    position: absolute;
+    z-index: -1;
+  }
+
+  .stack span:first-child {
+    animation: glitch 731ms infinite;
+  }
+
+  .stack span:last-child {
+    animation: glitch 373s infinite;
+  }
+  .stackList {
+    align-content: space-between;
+    font-size: 3.5vw;
+    font-family: $subtitleFont;
+  }
+
+  .sl:hover {
+    text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
+      -0.025em -0.05em 0 rgba(0, 255, 0, 0.75),
+      0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+
+    animation: glitch 450ms infinite;
+  }
+
+  //Goals Card
+  .goals {
+    padding: 2rem;
+  }
+  .goals h1 {
+    font-family: $titleFont;
+    font-size: 5rem;
+    text-align: center;
+  }
+
+  .goals h3 {
+    font-family: $subtitleFont;
+    font-size: 4rem;
+  }
+
+  .goals ul {
+    list-style-type: square;
+    font-family: $bodyFont;
+    font-size: 2rem;
+  }
+  .goals p {
+    font-family: $subtitleFont;
+    font-size: 3rem;
+  }
+  .about-img-div {
+    display: grid;
+    grid-template-columns: 20% 40% 20%;
+    justify-content: space-around;
+  }
+
+  .about-img-div :nth-child(2) {
+    justify-self: center;
+    align-self: center;
+    margin: auto;
+  }
+
+  .about-img-div > * {
+    border-radius: 10px;
+    height: 50vh;
+    width: auto;
+    margin: 1rem;
+    border-width: 1rem;
+    margin: 1rem;
+  }
+
+  .about-body {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+}
+
+
+//Not sure I love this but was a fun exercise.
+//Thought about making it reusable but in this case I'm just gonna leave it.
+@keyframes glitch {
+  0% {
+    text-shadow: 0.025em 0.05em 0 rgba(255, 0, 0, 0.75),
+      0.05em 0.025em 0 rgba(0, 255, 0, 0.75),
+      -0.05em -0.025em 0 rgba(0, 0, 255, 0.75);
+  }
+  14% {
+    text-shadow: 0.025em 0.05em 0 rgba(255, 0, 0, 0.75),
+      0.05em 0.025em 0 rgba(0, 255, 0, 0.75),
+      -0.05em -0.025em 0 rgba(0, 0, 255, 0.75);
+  }
+  15% {
+    text-shadow: -0.05em 0.025em 0 rgba(255, 0, 0, 0.75),
+      0.05em -0.025em 0 rgba(0, 255, 0, 0.75),
+      -0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+  49% {
+    text-shadow: -0.05em 0.025em 0 rgba(255, 0, 0, 0.75),
+      0.05em -0.025em 0 rgba(0, 255, 0, 0.75),
+      -0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+  50% {
+    text-shadow: 0.025em 0.05em 0 rgba(255, 0, 0, 0.75),
+      -0.025em -0.025em 0 rgba(0, 255, 0, 0.75),
+      0.025em -0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+  99% {
+    text-shadow: 0.025em 0.05em 0 rgba(255, 0, 0, 0.75),
+      -0.025em -0.025em 0 rgba(0, 255, 0, 0.75),
+      0.025em -0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+  100% {
+    text-shadow: -0.05em -0.025em 0 rgba(255, 0, 0, 0.75),
+      -0.05em 0.025em 0 rgba(0, 255, 0, 0.75),
+      0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+}

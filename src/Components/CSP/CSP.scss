@@ -1,0 +1,202 @@
+@import "../../Variables/Sass/SassVariables.scss";
+
+//regardless of screen size
+.inner-csp-wrap a {
+  text-decoration: none;
+}
+
+
+@media screen and (max-width: 500px) {
+  .inner-csp-wrap a:hover {
+    text-decoration: none;
+    color: $yellowColor;
+  }
+  
+  .inner-csp-wrap a:visited {
+    text-decoration: none;
+    color: $purpleColor;
+  }
+  
+  .inner-csp-wrap {
+    color: $whiteColor;
+    padding: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  
+  .inner-csp-wrap h1 {
+    font-family: $titleFont;
+    font-size: 2.5rem;
+  }
+  
+  .intro-csp p {
+    font-size: 1.5rem;
+    font-family: $subtitleFont;
+  }
+  
+  .inner-csp-wrap h2 {
+    font-family: $bodyFont2;
+    font-size: 1.5rem;
+  }
+  .inner-csp-wrap h3 {
+    font-size: 2rem;
+    font-family: $subtitleFont;
+    color: $pinkColor;
+  }
+  
+  .inner-csp-wrap h4 {
+    font-size: 1.5rem;
+    font-family: $subtitleFont;
+    color: $pinkColor;
+  }
+  
+  
+  .cookie-info p {
+    font-family: $bodyFont;
+    font-size: 1rem;
+  }
+  
+  .inner-csp-explanation {
+      margin: 1rem;
+  }
+  
+  .line-pad {
+      margin: 0;
+  }
+
+}
+
+@media screen and (min-width: 500px) {
+  .inner-csp-wrap a:hover {
+    text-decoration: none;
+    color: $yellowColor;
+  }
+  
+  .inner-csp-wrap a:visited {
+    text-decoration: none;
+    color: $purpleColor;
+  }
+  
+  .inner-csp-wrap {
+    color: $whiteColor;
+    padding: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  
+  .inner-csp-wrap h1 {
+    font-family: $titleFont;
+    font-size: 4rem;
+  }
+  
+  .intro-csp p {
+    font-size: 2rem;
+    font-family: $subtitleFont;
+  }
+  
+  .inner-csp-wrap h2 {
+    font-family: $bodyFont2;
+    font-size: 3rem;
+  }
+  .inner-csp-wrap h3 {
+    font-size: 2.5rem;
+    font-family: $subtitleFont;
+    color: $pinkColor;
+  }
+  
+  .inner-csp-wrap h4 {
+    font-size: 2rem;
+    font-family: $subtitleFont;
+    color: $pinkColor;
+  }
+  
+  .google-inner-div {
+    margin: 1rem;
+  }
+  
+  .cookie-info {
+    margin: 1rem;
+  }
+  
+  .cookie-info p {
+    font-family: $bodyFont;
+    font-size: 1.5rem;
+  }
+  
+  .inner-csp-explanation {
+      margin: 1rem;
+  }
+  
+  .line-pad {
+      margin: 1rem;
+  }
+
+}
+
+@media screen and (min-width: 900px) {
+.inner-csp-wrap a:hover {
+  text-decoration: none;
+  color: $yellowColor;
+}
+
+.inner-csp-wrap a:visited {
+  text-decoration: none;
+  color: $purpleColor;
+}
+
+.inner-csp-wrap {
+  color: $whiteColor;
+  padding: 4rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.inner-csp-wrap h1 {
+  font-family: $titleFont;
+  font-size: 5rem;
+}
+
+.intro-csp p {
+  font-size: 2rem;
+  font-family: $subtitleFont;
+}
+
+.inner-csp-wrap h2 {
+  font-family: $bodyFont2;
+  font-size: 3rem;
+}
+.inner-csp-wrap h3 {
+  font-size: 2.5rem;
+  font-family: $subtitleFont;
+  color: $pinkColor;
+}
+
+.inner-csp-wrap h4 {
+  font-size: 2rem;
+  font-family: $subtitleFont;
+  color: $pinkColor;
+}
+
+.google-inner-div {
+  margin: 1rem;
+}
+
+.cookie-info {
+  margin: 1rem;
+}
+
+.cookie-info p {
+  font-family: $bodyFont;
+  font-size: 1.5rem;
+}
+
+.inner-csp-explanation {
+    margin: 3rem;
+}
+
+.line-pad {
+    margin: 3rem;
+}
+
+
+}

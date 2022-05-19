@@ -1,0 +1,73 @@
+@import "../../Variables/Sass/SassVariables.scss";
+
+.blog-footer-icons {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+}
+
+.edit-header {
+    text-align: center;
+}
+.comment-container {
+    position: relative;
+    cursor: pointer;
+}
+.comment-number {
+    color: $pinkColor;
+    font-weight: bold;
+    position: absolute;
+    top: 0;
+    z-index: 9;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+@media screen and (max-width: 500px) {
+    .blog-footer-icon {
+        font-size: 1.75rem;
+        margin-top: 1rem;
+        cursor: pointer;
+    }
+    .footer-drop {
+        margin-top: 1rem;
+    }
+
+}
+
+
+@media screen and (min-width: 500px) {
+    .footer-drop {
+        margin-top: 2rem;
+    }
+    .blog-footer-icon {
+        font-size: 1.5rem;
+        margin-top: 1rem;
+        cursor: pointer;
+    }
+
+}
+
+@media screen and (min-width: 950px) {
+    .blog-footer-icon {
+        font-size: 1.75rem;
+        margin-top: 1rem;
+        cursor: pointer;
+    }
+    .footer-drop {
+        margin-top: 2rem;
+
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .blog-footer-icon {
+        font-size: 2rem;
+        cursor: pointer;
+    }
+
+    .footer-drop {
+        margin-top: 2rem;
+    }
+}

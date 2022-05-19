@@ -1,0 +1,14 @@
+@import "../../../Variables/Sass/SassVariables.scss";
+
+.ProseMirror-focused {
+    outline:none;
+}
+
+.editor img{
+    max-width: 100%;
+    height: auto;
+    padding: 1rem;
+    user-select: auto;
+    border-radius: 40px;
+    text-align: center;
+}

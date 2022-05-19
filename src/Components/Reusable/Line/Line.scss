@@ -1,0 +1,13 @@
+@import "../../../Variables/Sass/SassVariables.scss";
+
+.innerWrap {
+  opacity: 0;
+  max-width: 80vw;
+  align-self: center;
+  justify-self: center;
+  overflow-x: hidden;
+}
+
+.rainbowLine {
+  @include rainbow(80vw, 2px)
+}

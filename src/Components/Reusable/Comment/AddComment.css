@@ -1,0 +1,15 @@
+.ProseMirror-focused {
+  outline: none;
+}
+
+.editor img {
+  max-width: 100%;
+  height: auto;
+  padding: 1rem;
+  -webkit-user-select: auto;
+     -moz-user-select: auto;
+      -ms-user-select: auto;
+          user-select: auto;
+  border-radius: 40px;
+  text-align: center;
+}

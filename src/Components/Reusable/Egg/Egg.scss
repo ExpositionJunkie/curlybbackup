@@ -1,0 +1,108 @@
+@import "../../../Variables/Sass/SassVariables.scss";
+
+.eggShell {
+  background-color: $blackColor;
+  color: $whiteColor;
+}
+.innerShell h1 {
+  font-family: $subtitleFont;
+  text-align: center;
+}
+
+
+.egg {
+  max-height: 560px;
+  max-width: 330px;
+  height: 560px;
+  width: 330px;
+  border-radius: 500px/ 800px;
+  @include rainbow(100%, 100%);
+  text-shadow: 3px 3px 10px $yellowColor;
+  filter: drop-shadow(10px 10px 300px $yellowColor);
+}
+
+
+@media screen and (max-width: 300px){
+  .innerShell h2 {
+    font-family: $subtitleFont2;
+    text-align: center;
+    font-size: 2.5rem;
+  }
+
+  .innerShell h1:first-child {
+    font-size: 2rem;
+  }
+  .innerShell h1:nth-child(2) {
+    font-size: 1.5rem;
+  }
+  
+  .eggHeader {
+    padding-top: 50px;
+    margin: 0;
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4))
+  }
+  .yolk {
+    margin: 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+    padding-top: 175px;
+    font-size: 1.25rem;
+    font-family: $bodyFont;
+    text-shadow: 3px 3px 10px $blackColor;
+    text-align: center;
+  }
+  //svg shadow tips: https://css-tricks.com/adding-shadows-to-svg-icons-with-css-and-svg-filters/
+.piedPiper {
+  display: block;
+  position: absolute;
+  top: 40px;
+  left: -20px;
+  height: 250px;
+  width: auto;
+  filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+}
+    
+}
+
+@media screen and (min-width: 300px){
+
+  .innerShell h2 {
+    font-family: $subtitleFont2;
+    text-align: center;
+    font-size: 3rem;
+  }
+
+  .innerShell h1:first-child {
+    font-size: 4rem;
+  }
+  
+
+  .eggHeader {
+    padding-top: 50px;
+    margin: 0;
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4))
+}
+
+  .yolk {
+    margin: 0;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-bottom: 2rem;
+    padding-top: 200px;
+    font-size: 1.25rem;
+    font-family: $bodyFont;
+    text-shadow: 3px 3px 10px $blackColor;
+    text-align: center;
+  }
+  //svg shadow tips: https://css-tricks.com/adding-shadows-to-svg-icons-with-css-and-svg-filters/
+.piedPiper {
+  display: block;
+  position: absolute;
+  top: 55px;
+  height: 290px;
+  width: auto;
+  filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+}
+  
+}

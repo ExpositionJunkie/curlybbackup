@@ -1,0 +1,56 @@
+@import "../../../Variables/Sass/SassVariables.scss";
+
+.blog-footer-icons {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+}
+
+.edit-header {
+    text-align: center;
+}
+
+@media screen and (max-width: 500px) {
+    .blog-footer-icon {
+        font-size: 1rem;
+        margin-top: 1rem;
+    }
+    .footer-drop {
+        margin-top: 1rem;
+    }
+}
+
+
+@media screen and (min-width: 500px) {
+    .footer-drop {
+        margin-top: 2rem;
+    }
+    .blog-footer-icon {
+        font-size: 1.5rem;
+        margin-top: 1rem;
+    }
+
+}
+
+@media screen and (min-width: 950px) {
+    .blog-footer-icon {
+        font-size: 1.75rem;
+        margin-top: 1rem;
+    }
+    .footer-drop {
+        margin-top: 3rem;
+        padding: 1rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .blog-footer-icon {
+        font-size: 2rem;
+        margin-top: 2rem;
+    }
+
+    .footer-drop {
+        margin-top: 4rem;
+        padding: 2rem;
+    }
+}

@@ -1,0 +1,38 @@
+.innerWrap {
+  opacity: 0;
+  max-width: 80vw;
+  align-self: center;
+  justify-self: center;
+  overflow-x: hidden;
+}
+
+.rainbowLine {
+  display: block;
+  margin: auto;
+  max-width: 80vw;
+  max-height: 2px;
+  overflow: hidden;
+  background: linear-gradient(45deg, #f17c58, #e94584, #24aadb, #27dbb1, #ffdc18, #ff3706);
+  background-size: 600% 100%;
+  -webkit-animation: gradient 16s linear infinite;
+          animation: gradient 16s linear infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  overflow-x: hidden;
+}
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 100%;
+  }
+}
+@keyframes gradient {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 100%;
+  }
+}

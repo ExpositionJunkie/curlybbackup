@@ -1,0 +1,102 @@
+@import "../../../../Variables/Sass/SassVariables.scss";
+
+.dnd-wrapper {
+  color: $whiteColor;
+  width: 100vw;
+}
+
+.dnd-explanation {
+  font-family: $bodyFont;
+}
+
+.dnd-wrapper p {
+  font-family: $bodyFont;
+  font-size: 1.25rem;
+}
+.inner-wrapper h1 {
+  font-family: $subtitleFont2;
+  font-size: 4rem;
+  color: $pinkColor;
+}
+
+.dnd-wrapper h2 {
+  font-family: $subtitleFont;
+  font-size: 3rem;
+}
+
+.dnd-wrapper h3 {
+  font-family: $bodyFont2;
+  font-size: 2rem;
+}
+
+
+@media screen and (min-width: 100px) {
+  
+  .text-input {
+    font-family: $bodyFont;
+    font-size: 2rem;
+    width: 100%;
+    @include textInputStyle(2rem);
+  }
+  .dnd-search-form {
+    font-family: $bodyFont;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .dnd-search-form > * {
+    text-align: center;
+    align-self: center;
+    width: 100%;
+  }
+  .dnd-search-label {
+    font-size: 1.5rem;
+  }
+
+  .button-dnd {
+    font-family: $bodyFont;
+    color: $whiteColor;
+    @include buttonStyle($pinkColor, 1.5rem);
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .text-input {
+    font-family: $bodyFont;
+    font-size: 2rem;
+    width: 100%;
+    @include textInputStyle(2rem);
+  }
+  .dnd-search-form {
+    display: flex;
+  }
+  .button-dnd {
+    font-family: $bodyFont;
+    color: $whiteColor;
+    @include buttonStyle($pinkColor, 2rem);
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .dnd-search-form {
+    display: flex;
+  }
+
+  .dnd-search-form > * {
+    font-family: $bodyFont;
+  }
+
+  .dnd-search-label {
+    color: $pinkColor;
+  }
+
+  .text-input .button-dnd .dnd-search-label {
+    padding: 2rem;
+    margin: 2rem;
+  }
+
+  .button-dnd {
+    color: $whiteColor;
+    @include buttonStyle($pinkColor, 2rem);
+  }
+}

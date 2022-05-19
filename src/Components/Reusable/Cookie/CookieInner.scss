@@ -1,0 +1,256 @@
+@import "../../../Variables/Sass/SassVariables.scss";
+
+.i-cookie-wrap {
+  display: flex;
+  flex-direction: column;
+  background-color: none;
+  justify-content: space-between;
+}
+
+.i-cookie-wrap a {
+  text-decoration: none;
+  color: $pinkColor;
+}
+
+.i-cookie-wrap a:hover {
+  text-decoration: none;
+  color: $yellowColor;
+}
+
+.i-cookie-wrap a:visited {
+  text-decoration: none;
+  color: $purpleColor;
+}
+
+@media screen and (max-width: 500px) {
+  .cookie-inner-dialog {
+    display: flex;
+    flex-direction: column;
+    background-color: $blackColor;
+    color: $whiteColor;
+    border-radius: 20px;
+    border-color: $blackColor;
+    width: 80vw;
+    justify-content: flex-start;
+  }
+
+  .cookie-inner-text {
+    padding: 1rem;
+    font-size: 1rem;
+    font-family: $bodyFont;
+    text-align: center;
+    align-content: center;
+  }
+
+  .inner-button-wrap {
+    margin-left: 3rem;
+    margin-right: 3rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .inner-accept-button,
+  .inner-decline-button {
+    font-family: $bodyFont;
+    font-size: 1.5rem;
+    border-radius: 20px;
+    padding: 0.5rem;
+    color: $whiteColor;
+    justify-content: center;
+
+    margin-bottom: 2rem;
+    padding: 1rem;
+  }
+
+  .inner-decline-button {
+    background-color: $blackColor;
+    align-items: stretch;
+  }
+
+  .inner-accept-button {
+    background-color: $blackColor;
+    align-items: stretch;
+  }
+
+  .inner-accept-button ::after,
+  .inner-decline-button ::after {
+    @include rainbow-shadow(0px, 0px, 15px);
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .inner-cookie-wrap {
+    background-color: none;
+    width: 100%;
+  }
+
+  .cookie-inner-dialog {
+    display: flex;
+    flex-direction: column;
+    background-color: $blackColor;
+    color: $whiteColor;
+    border-radius: 20px;
+    border-color: $blackColor;
+    width: 80vw;
+   
+  }
+
+  .cookie-inner-text {
+    font-size: 1.5rem;
+    font-family: $bodyFont;
+    text-align: center;
+    align-content: center;
+  }
+
+  .inner-button-wrap {
+    margin-left: 3rem;
+    margin-right: 3rem;
+    align-content: stretch;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .inner-accept-button,
+  .inner-decline-button {
+    width: 100%;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+    font-family: $bodyFont;
+    font-size: 1.5rem;
+    border-radius: 20px;
+    padding: 0.5rem;
+    color: $whiteColor;
+    justify-content: center;
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .inner-decline-button {
+    background-color: $blackColor;
+    padding: 2rem;
+  }
+
+  .inner-accept-button {
+    background-color: $blackColor;
+    padding: 2rem;
+    align-items: stretch;
+  }
+
+  .inner-accept-button ::after,
+  .inner-decline-button ::after {
+    @include rainbow-shadow(0px, 0px, 15px);
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .inner-cookie-wrap {
+    top: 50vh;
+    background-color: none;
+    width: 100vw;
+  }
+
+  .cookie-inner-dialog {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: $blackColor;
+    color: $whiteColor;
+    border-radius: 20px;
+    border-color: $blackColor;
+    width: 80vw;
+  }
+
+  .cookie-inner-text {
+    font-size: 1.5rem;
+    font-family: $bodyFont;
+    text-align: center;
+  }
+
+  .inner-button-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .inner-accept-button,
+  .inner-decline-button {
+    font-family: $bodyFont;
+    font-size: 1.5rem;
+    border-radius: 20px;
+    color: $whiteColor;
+    padding: 1rem;
+  }
+
+  .inner-decline-button {
+    background-color: $blackColor;
+    margin-right: 0;
+  }
+
+  .inner-accept-button {
+    background-color: $blackColor;
+    margin-left: 0;
+    align-items: stretch;
+  }
+
+  .inner-accept-button ::after,
+  .inner-decline-button ::after {
+    @include rainbow-shadow(0px, 0px, 15px);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .cookie-inner-dialog {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: $blackColor;
+    color: $whiteColor;
+    border-radius: 20px;
+    border-color: $blackColor;
+    width: 80vw;
+  }
+
+  .cookie-inner-text {
+    font-size: 1.5rem;
+    font-family: $bodyFont;
+    text-align: center;
+    align-content: center;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .inner-button-wrap {
+    margin-left: 3rem;
+    margin-right: 3rem;
+    display: flex;
+  }
+
+  .inner-accept-button,
+  .inner-decline-button {
+    font-family: $bodyFont;
+    font-size: 1.5rem;
+    border-radius: 20px;
+    padding: 0.5rem;
+    color: $whiteColor;
+    justify-content: center;
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .inner-decline-button {
+    background-color: $blackColor;
+  }
+
+  .inner-accept-button {
+    background-color: $blackColor;
+    display: flex;
+    align-items: stretch;
+  }
+
+  .inner-accept-button ::after,
+  .inner-decline-button ::after {
+    @include rainbow-shadow(0px, 0px, 15px);
+  }
+}

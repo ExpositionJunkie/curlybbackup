@@ -1,0 +1,58 @@
+.nasa-wrapper {
+  color: #ffffff;
+}
+
+.nasa-inner-wrapper h2 {
+  font-family: "Advent Pro", sans-serif;
+  font-size: 2rem;
+}
+
+.nasa-inner-wrapper h3 {
+  font-family: "Comfortaa", cursive;
+}
+
+.nasa-inner-wrapper p {
+  font-family: "Raleway", sans-serif;
+  font-size: 2rem;
+}
+
+.nasa-inner-wrapper input {
+  font-family: "Raleway", sans-serif;
+  width: 100%;
+  font-size: 2rem;
+  align-self: center;
+  border-radius: 20px;
+}
+
+.nasa-inner-wrapper select {
+  font-family: "Raleway", sans-serif;
+  width: 100%;
+  font-size: 2rem;
+  align-self: center;
+  border-radius: 20px;
+}
+
+.nasa-inner-wrapper label {
+  font-family: "Raleway", sans-serif;
+  font-size: 2rem;
+}
+
+.nasa-inner-wrapper form > * {
+  margin: 2rem;
+}
+
+#nasa-submit {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 100%;
+  font-size: 2rem;
+  align-self: center;
+  background-color: #e94584;
+  border-radius: 20px;
+}
+
+.nasa-response {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  padding: 2rem;
+}

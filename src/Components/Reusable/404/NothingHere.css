@@ -1,0 +1,68 @@
+.nothing-wrapper {
+  min-height: 100vh;
+}
+
+@media screen and (max-width: 500px) {
+  .devito-head {
+    max-width: 100%;
+  }
+
+  .nothing {
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .nothing-top {
+    font-size: 2rem;
+  }
+
+  .nothing-title {
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .egg-wrap {
+    padding: 1rem;
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 500px) {
+  .nothing-title {
+    font-size: 4rem;
+    text-align: center;
+  }
+
+  .nothing {
+    text-align: center;
+    font-size: 3rem;
+  }
+
+  .devito-head {
+    max-width: 100%;
+  }
+
+  .egg-wrap {
+    padding: 1rem;
+    font-size: 2rem;
+  }
+}
+@media screen and (min-width: 700px) {
+  .nothing-title {
+    font-size: 4rem;
+    text-align: center;
+  }
+
+  .nothing {
+    text-align: center;
+    font-size: 3rem;
+    padding: 1rem;
+  }
+
+  .devito-head {
+    max-width: 100%;
+  }
+
+  .egg-wrap {
+    padding: 1rem;
+  }
+}

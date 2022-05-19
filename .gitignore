@@ -1,0 +1,40 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+#confidential
+.env
+
+# testing
+/coverage
+
+# production
+/build
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+#keys (old mkcert)
+curlybrackets.me+3-key.pem
+curlybrackets.me+3.pem
+
+#keys (localhost only with powershell command)
+##https://dev.to/wozzo/using-https-with-react-create-app-windows-fn8
+localhost.pfx
+localhost.pem
+localhost-key.pem
+certificates.ps1
+www_curlybrackets_me.ca-bundle
+www_curlybrackets_me.crt
+www_curlybrackets_me.p7b

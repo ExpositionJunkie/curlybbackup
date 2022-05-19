@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Advent+Pro&family=Audiowide&family=Comfortaa&family=Raleway:wght@200&family=Staatliches&display=swap");
+@import "./Variables/Sass/SassVariables.scss";
+
+
+//weird break with galaxy fold fixed by this
+html,
+body {
+  overflow-x: hidden;
+  width: 100%;
+  margin: 0;
+}
+
+.body, .main {
+  background-color: black;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+
+body {
+  width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+@supports (-webkit-overflow-scrolling: touch) {
+  :where(input) {
+    font-size: 1.6rem;
+  }
+}

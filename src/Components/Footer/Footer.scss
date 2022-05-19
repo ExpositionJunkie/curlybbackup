@@ -1,0 +1,172 @@
+@import "../../Variables/Sass/SassVariables.scss";
+
+.footerWrapper {
+  color: $whiteColor;
+  background-color: $blackColor;
+  justify-content: center;
+  padding-bottom: 0.5rem;
+}
+
+.lineDiv {
+  padding-bottom: 2rem;
+}
+
+
+// Very small screens
+@media screen and (min-width: 100px) {
+  .spanWrap {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .icons > * {
+    height: 50px;
+    width: auto;
+  }
+  .piedPiper > * {
+    height: 50px;
+    width: auto;
+  }
+
+  .contactWrap {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+  }
+  .contactLink {
+    display: inline-block;
+  }
+
+  //These go away below the highest breakpoint
+  .contactLabel,
+  .contactStr {
+    opacity: 0;
+    height: 0;
+    width: 0;
+  }
+
+  .techStack {
+    display: inline-block;
+    text-align: center;
+    font-family: $bodyFont;
+    font-size: 1rem;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 600px) {
+  .spanWrap {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .icons > * {
+    height: 50px;
+    width: auto;
+  }
+  .piedPiper > * {
+    height: 50px;
+    width: auto;
+  }
+
+  .contactWrap {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+  }
+  .contactLink {
+    display: inline-block;
+  }
+
+  //These go away below the highest breakpoint
+  .contactLabel,
+  .contactStr {
+    opacity: 0;
+    height: 0;
+    width: 0;
+  }
+
+  .techStack {
+    display: inline-block;
+    text-align: center;
+    font-family: $bodyFont;
+    font-size: 1rem;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .spanWrap {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .icons > * {
+    height: 50px;
+    width: auto;
+  }
+  .piedPiper > * {
+    height: 50px;
+    width: auto;
+  }
+
+  .contactWrap {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+  }
+  .contactLink {
+    display: inline-block;
+  }
+
+  //These go away below the highest breakpoint
+  .contactLabel,
+  .contactStr {
+    opacity: 0;
+    height: 0;
+  }
+
+  .techStack {
+    display: inline-block;
+    text-align: center;
+    font-family: $bodyFont;
+    font-size: 1rem;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .spanWrap {
+    display: grid;
+    grid-template-columns: 80% 30%;
+    width: 80%;
+  }
+  .icons > * {
+    display: inline-block;
+    height: 50px;
+    width: auto;
+  }
+  .piedPiper > * {
+    height: 50px;
+    width: auto;
+  }
+  .contactWrap {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    overflow: hidden;
+    font-family: $subtitleFont;
+  }
+
+  //In this view these should be visible
+  .contactLabel,
+  .contactStr {
+    opacity: 1;
+    height: 100%;
+    width: auto;
+  }
+
+  .techStack {
+    font-family: $bodyFont;
+    font-size: 1rem;
+  }
+}

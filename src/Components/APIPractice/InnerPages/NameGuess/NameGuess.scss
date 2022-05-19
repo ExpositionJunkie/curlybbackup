@@ -1,0 +1,47 @@
+@import "../../../../Variables/Sass/SassVariables.scss";
+
+.name-guess-wrapper {
+  color: $whiteColor;
+}
+
+.name-guess-inner-wrapper h2 {
+  font-family: $subtitleFont;
+  font-size: 2rem;
+}
+
+.name-guess-inner-wrapper p {
+  font-family: $bodyFont;
+  font-size: 2rem;
+}
+
+.name-guess-inner-wrapper input {
+  font-family: $bodyFont;
+  width: 100%;
+  @include textInputStyle(2rem);
+}
+
+.name-guess-inner-wrapper select {
+  font-family: $bodyFont;
+  width: 100%;
+  @include textInputStyle(2rem);
+}
+
+.name-guess-inner-wrapper label {
+  font-family: $bodyFont;
+  font-size: 2rem;
+}
+
+#name-guess-submit {
+    width: 97%;
+    display: grid;
+    grid-template-columns: 100%;
+  @include buttonStyle($pinkColor, 2rem);
+}
+
+.name-guess-response {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 2rem;
+}

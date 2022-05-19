@@ -1,0 +1,234 @@
+//Colors
+$blackColor: #000000;
+$grayColor: #262624;
+$yellowColor: #ffdc18;
+$purpleColor: #8335d0;
+$lightPinkColor: #fa64d6;
+$pinkColor: #e94584;
+$whiteColor: #ffffff;
+$blueColor: #24aadb;
+$orangeColor: #f17c58;
+$tealColor: #27dbb1;
+$redColor: #ff3706;
+$transparentColor: rgba(0, 0, 0, 0);
+
+//links
+$linkColor: rgba(251, 63, 182, 1);
+$hoverLinkColor: rgba(34, 193, 195, 1);
+$linkVisitedColor: rgba(143, 84, 190, 1);
+
+//Fonts
+$titleFont: "Audiowide", cursive;
+$subtitleFont: "Advent Pro", sans-serif;
+$subtitleFont2: "Staatliches", cursive;
+$bodyFont: "Raleway", sans-serif;
+$bodyFont2: "Comfortaa", cursive;
+$tagFont: "Cairo", sans-serif;
+
+//Mixins
+@mixin transform($property) {
+  -webkit-transform: $property;
+  -ms-transform: $property;
+  transform: $property;
+}
+
+//Buttons
+@mixin buttonStyle($background-color, $fontSize) {
+  font-size: $fontSize;
+  align-self: center;
+  background-color: $background-color;
+  border-radius: 20px;
+}
+
+@mixin textInputStyle($fontSize) {
+  font-size: $fontSize;
+  align-self: center;
+  border-radius: 20px;
+}
+
+//Animations
+@mixin rainbow($max-width, $max-height) {
+  display: block;
+  margin: auto;
+  max-width: $max-width;
+  max-height: $max-height;
+  overflow: hidden;
+  background: linear-gradient(
+    45deg,
+    #f17c58,
+    #e94584,
+    #24aadb,
+    #27dbb1,
+    #ffdc18,
+    #ff3706
+  );
+  background-size: 600% 100%;
+  animation: gradient 16s linear infinite;
+  animation-direction: alternate;
+  overflow-x: hidden;
+
+  @include keyframes(gradient) {
+    0% {
+      background-position: 0%;
+    }
+    100% {
+      background-position: 100%;
+    }
+  }
+}
+
+@mixin rainbow-plain() {
+  display: block;
+  margin: auto;
+  overflow: hidden;
+  background: linear-gradient(
+    45deg,
+    #f17c58,
+    #e94584,
+    #24aadb,
+    #27dbb1,
+    #ffdc18,
+    #ff3706
+  );
+  background-size: 600% 100%;
+  animation: gradient 16s linear infinite;
+  animation-direction: alternate;
+  overflow-x: hidden;
+
+  @include keyframes(gradient) {
+    0% {
+      background-position: 0%;
+    }
+    100% {
+      background-position: 100%;
+    }
+  }
+}
+
+@mixin fade($duration) {
+  animation: gradient $duration;
+
+  @include keyframes(fade) {
+    0% {
+      opacity: 100%;
+    }
+    100% {
+      opacity: 0%;
+    }
+  }
+}
+
+@mixin rainbow-shadow($px1, $px2, $px3) {
+  animation: shadow-fade 16s linear infinite;
+  animation-direction: alternate;
+
+  @include keyframes(shadow-fade) {
+    0% {
+      box-shadow: $px1 $px2 $px3 $orangeColor;
+    }
+    16% {
+      box-shadow: $px1 $px2 $px3 $yellowColor;
+    }
+    32% {
+      box-shadow: $px1 $px2 $px3 $tealColor;
+    }
+    48% {
+      box-shadow: $px1 $px2 $px3 $blueColor;
+    }
+    64% {
+      box-shadow: $px1 $px2 $px3 $purpleColor;
+    }
+    84% {
+      box-shadow: $px1 $px2 $px3 $pinkColor;
+    }
+    100% {
+      box-shadow: $px1 $px2 $px3 $redColor;
+    }
+  }
+}
+
+@mixin rainbow-text-shadow($px1, $px2, $px3) {
+  animation: shadow-fade 16s linear infinite;
+  animation-direction: alternate;
+
+  @include keyframes(shadow-fade) {
+    0% {
+      text-shadow: $px1 $px2 $px3 $orangeColor;
+    }
+    16% {
+      text-shadow: $px1 $px2 $px3 $yellowColor;
+    }
+    32% {
+      text-shadow: $px1 $px2 $px3 $tealColor;
+    }
+    48% {
+      text-shadow: $px1 $px2 $px3 $blueColor;
+    }
+    64% {
+      text-shadow: $px1 $px2 $px3 $purpleColor;
+    }
+    84% {
+      text-shadow: $px1 $px2 $px3 $pinkColor;
+    }
+    100% {
+      text-shadow: $px1 $px2 $px3 $redColor;
+    }
+  }
+}
+
+@mixin rainbow-svg-shadow($px1, $px2, $px3) {
+  animation: shadow-svg-fade 16s linear infinite;
+  animation-direction: alternate;
+
+  @include keyframes(shadow-svg-fade) {
+    0% {
+      filter: drop-shadow($px1 $px2 $px3 $orangeColor);
+    }
+    16% {
+      filter: drop-shadow($px1 $px2 $px3 $yellowColor);
+    }
+    32% {
+      filter: drop-shadow($px1 $px2 $px3 $tealColor);
+    }
+    48% {
+      filter: drop-shadow($px1 $px2 $px3 $blueColor);
+    }
+    64% {
+      filter: drop-shadow($px1 $px2 $px3 $purpleColor);
+    }
+    84% {
+      filter: drop-shadow($px1 $px2 $px3 $pinkColor);
+    }
+    100% {
+      filter: drop-shadow($px1 $px2 $px3 $redColor);
+    }
+  }
+}
+
+//https://brandonbrule.github.io/scss-animation-keyframe-mixin/
+
+@mixin keyframes($animation-name) {
+  @-webkit-keyframes #{$animation-name} {
+    @content;
+  }
+  @-moz-keyframes #{$animation-name} {
+    @content;
+  }
+  @-ms-keyframes #{$animation-name} {
+    @content;
+  }
+  @-o-keyframes #{$animation-name} {
+    @content;
+  }
+  @keyframes #{$animation-name} {
+    @content;
+  }
+}
+
+@mixin animation($str) {
+  -webkit-animation: #{$str};
+  -moz-animation: #{$str};
+  -ms-animation: #{$str};
+  -o-animation: #{$str};
+  animation: #{$str};
+}
